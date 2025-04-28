@@ -19,7 +19,7 @@ window.speechSynthesis.onvoiceschanged = () => {
     voiceSelect.innerHTML = ""; // Clear previous options
 
     voices.forEach((voice, i) => {
-        let option = new Option(voice.name, i); // Correct: 'Option' with capital O
+        let option = new Option(voice.name, i); 
         voiceSelect.appendChild(option);
     });
 };
