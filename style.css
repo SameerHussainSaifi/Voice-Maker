@@ -21,7 +21,7 @@ h1 span{
 }
 
 textarea{
-    width:35vw;
+    width:40vw;
     height:40vh;
     /* overflow: auto; */
     background-color:rgb(47, 73, 101);
@@ -30,31 +30,41 @@ textarea{
 textarea placeholder{
     color:white;
 }
+textarea::placeholder{
+    font-size:16px;
+    color:white;
+}
 .rowd{
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin-top:1rem;
+    /* width:500px; */
+    gap:20px;
+
 }
  #listen{
-    position:relative;
- border-radius: 15px;
-    left:27%;
+ border-radius: 35px;
     background-color: crimson;
     color:white;
-
-  
-   
 }
 #reset{
     position: relative;
     background-color:rgb(255, 132, 0);
-    border-radius: 15px;
-    width:96px;
+    border-radius: 35px;
+    width:96.5px;
+    height:43.6px;
+    font-size: 16px;
     color: white;
-    left:23%;
+    /* left:23%; */
 }
 select{
-    position:relative;
-   right:50%;
+   flex:1;
+    /* it will take all the empty spaces in flex box */
+   color:#fff;
+   background: #403d84;
+   height:50px;
+   outline: 0;
+   border: 0;
+   border-radius: 35px;
     
 } 
