@@ -4,8 +4,7 @@
 }
 
 .container{
-  width:100vw;
-  height:100vh;
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,11 +20,10 @@ h1 span{
 }
 
 textarea{
-    width:40vw;
-    height:40vh;
     /* overflow: auto; */
     background-color:rgb(47, 73, 101);
     color:white;
+    border-radius: 10px;
 }
 textarea placeholder{
     color:white;
@@ -38,21 +36,22 @@ textarea::placeholder{
     display: flex;
     align-items: center;
     margin-top:1rem;
-    /* width:500px; */
-    gap:20px;
+    gap:1vw;
 
 }
  #listen{
  border-radius: 35px;
     background-color: crimson;
     color:white;
+    display:flex;
+    justify-content: center;
+    /* height:85%; */
 }
 #reset{
     position: relative;
     background-color:rgb(255, 132, 0);
     border-radius: 35px;
-    width:96.5px;
-    height:43.6px;
+    
     font-size: 16px;
     color: white;
     /* left:23%; */
@@ -62,9 +61,63 @@ select{
     /* it will take all the empty spaces in flex box */
    color:#fff;
    background: #403d84;
-   height:50px;
+  
    outline: 0;
    border: 0;
    border-radius: 35px;
     
 } 
+@media(min-width:1024px){
+    .container{
+        width:100vw;
+    height:100vh;
+   
+    }
+    textarea{
+      
+    width:40vw;
+    height:45vh;
+    
+    }
+    .rowd{
+        width:40vw;
+    }
+    #reset{
+    width:96.5px;
+    height:6.5vh;
+    }
+#listen{
+    height:6.5vh;
+}
+    select{
+        height:6.5vh;
+    }
+    
+}
+
+@media(max-width:767px){
+    .container{
+     width:100vw;
+    height:100vh;
+    position:relative;
+    bottom:5rem;
+    }
+    textarea{
+    width:90vw;
+    height:35vh;
+    }
+    .rowd{
+       margin:1rem 5% 0 5%;
+
+    }
+    #reset{
+    width:96.5px;
+    height:6.5vh;
+    }
+#listen{
+    height:6.5vh;
+}
+    select{
+        height:6.5vh;
+    }
+}
